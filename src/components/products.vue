@@ -26,3 +26,66 @@ export default {
   name: 'Products'
 }
 </script>
+
+<style scoped lang="scss">
+  .products-title{
+    margin-top: 60px;
+}
+.products p{
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+button.launchpad,
+button.marketplace{
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 350px;
+    height: 78px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 32px;
+    line-height: 44px
+}
+button.launchpad:hover{
+    color:#2ECC71;
+}
+button.marketplace:hover{
+    color:#252525;
+}
+button.launchpad{
+    margin-top: 20px;
+    color:#252525;
+    border: 5px solid #252525;
+}
+button.marketplace{
+    margin-top:50px;
+    color:#2ECC71;
+    border: 5px solid #2ECC71;
+}
+@media screen and (max-width: 375px){
+    .products-title{
+        margin-top: 50px;
+    }
+    button.marketplace,
+    button.launchpad{
+        margin-top: 3px;
+        font-size: 25px;
+        line-height: 34px;
+        height: 63px;
+        width: 100%;
+        border-width: 3px;
+    }
+    button.marketplace{
+        margin-top: 3px;
+    }
+
+    button.launchpad{
+        margin-top: 5px;
+    }
+}
+@media screen and  (min-width: 280px) and (max-width: 374px){
+  .products img {
+        width: 260px;
+    }
+}
+</style>
