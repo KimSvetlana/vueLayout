@@ -5,7 +5,7 @@
                 <div class='content'>
                     <h1>Private Equity Made Easy</h1>
                     <img class='phone' src="../assets/images/001.png">
-                    <img class='phone-shadow' src="../assets/images/Ellipse 11.png" alt="">
+                    <img class='phone-shadow' src="../assets/images/Ellipse11.png" alt="">
                     <p>Equiteez is on a mission to make private equity easily accesible to all in vestors</p>
                     <button type="button" class="singnup">Singnup For Free</button>
                 </div>

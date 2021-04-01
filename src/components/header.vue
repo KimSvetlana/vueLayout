@@ -1,46 +1,46 @@
 <template>
-    <header id ='header' class='header'>
+<header id ='header' class='header'>
     <div class='container'>
         <div class='header-body'>
-            <div id='#toggle' class='header-burger'  :class="{activeBur: isActive}" @click="show">
+            <div id='#toggle' class='header-burger' :class="{activeBur: isActive}" @click="show">
                 <span></span>
             </div>
             <div class='header-logo'>
-                <a><img src="../assets/images/Equiteez.svg" alt="Equiteez" width="179px" height="51px"></a>
+                <a><img src="../assets/images/Equiteez.svg" alt="Equiteez" width="179" height="51"></a>
             </div>
-      <nav class='header-menu' id='bar' :class="{activeBur: isActive}">
-          <ul class='header-list'>
-              <li><a class="header-link" href="#securities">What Are Digital Securities?</a></li>
+        <nav class='header-menu' :class="{activeBur: isActive}">
+            <ul class='header-list'>
+                <li><a class="header-link" href="#securities">What Are Digital Securities?</a></li>
                 <li><a class="header-link" href="#products">Products</a></li>
                 <li><a class="header-link" href="#">Digitize Your Business</a></li>
                 <li><a class="header-link" href="#">Blog</a></li>
                 <li><a class="header-link" href="#">Contact Us</a></li>
             </ul>
-          <ul class="header-list social">
-                  <li>
+            <ul class="header-list social">
+                <li>
                     <a href="#">
-                      <img src="../assets/images/Twitter (Traced).svg"  width="30px" height="30px">
+                      <img src="../assets/images/Twitter.svg"  width="30" height="30">
                     </a>
-                  </li>
-                  <li>
-                      <a href="#">
-                          <img src="../assets/images/Facebook (Traced).svg"  width="30px" height="30px">
-                      </a>
-                    </li>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../assets/images/Facebook.svg"  width="30" height="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../assets/images/Linkedin.svg" alt="Equiteez" width="30" height="30">
+                    </a>
+                </li>
                     <li>
-                      <a href="#">
-                          <img src="../assets/images/Linkedin (Traced).svg" alt="Equiteez" width="30px" height="30px">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                          <img src="../assets/images/Medium.svg" width="30px" height="30px">
-                      </a>
+                        <a href="#">
+                            <img src="../assets/images/Medium.svg" width="30" height="30">
+                        </a>
                     </li>
                 </ul>
-      </nav>
+            </nav>
+        </div>
     </div>
-  </div>
 </header>
 </template>
 
@@ -189,7 +189,6 @@
 }
 </style>
 <script>
-// import Vue from 'vue'
 export default {
 
   el: 'header',

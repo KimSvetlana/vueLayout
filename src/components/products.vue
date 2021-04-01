@@ -14,7 +14,7 @@
               from private investors</p>
           </div>
           <div class="content">
-            <img src="../assets/images/EQTZ 1.jpg" alt="">
+            <img src="../assets/images/EQTZ1.jpg" alt="">
           </div>
         </div>
       </div>
@@ -49,7 +49,8 @@ export default {
       height: 78px;
       border-radius: 10px;
       font-size: 32px;
-      line-height: 44px
+      line-height: 44px;
+      background-color: #fff;
   }
   button.launchpad:hover{
       color:#2ECC71;
