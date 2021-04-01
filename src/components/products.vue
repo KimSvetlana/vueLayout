@@ -44,7 +44,6 @@ export default {
   }
   button.launchpad,
   button.marketplace{
-      margin-top: 20px;
       box-sizing: border-box;
       width: 350px;
       height: 78px;
@@ -59,12 +58,12 @@ export default {
       color:#252525;
   }
   button.launchpad{
-      margin-top: 20px;
+    margin-top: 10px;
       color:#252525;
       border: 5px solid #252525;
   }
   button.marketplace{
-      margin-top:50px;
+      margin-top:70px;
       color:#2ECC71;
       border: 5px solid #2ECC71;
   }

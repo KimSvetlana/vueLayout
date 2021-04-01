@@ -43,7 +43,7 @@ export default {
         letter-spacing: 0.5px;
     }
     .equity .singnup {
-        margin-top: 20px;
+        margin-top: 35px;
         padding: 14px 44px;
         color: #fff;
         font-size:20px;
@@ -86,7 +86,7 @@ export default {
             text-align: center;
         }
         .equity p{
-            margin-top: -183px;
+            margin-top: -158px;
             padding: 0 30px;
             width:auto;
             font-size: 22px;

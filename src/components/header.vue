@@ -1,130 +1,208 @@
 <template>
- <header>
-        <nav class="navbar">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="../assets/images/Equiteez.svg" alt="Equiteez" width="179px" height="51px">
-              </a>
-              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button> -->
-              <div class="navbar-collapse">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="#securities">What Are Digital Securities?</a>
-                  <a class="nav-link" href="#products">Products</a>
-                  <a class="nav-link" href="#">Digitize Your Business</a>
-                  <a class="nav-link" href="#">Blog</a>
-                  <a class="nav-link" href="#">Contact Us</a>
-                </div>
-
-                <ul class="navbar-nav social">
-                  <li class="nav-item">
-                    <a class="nav-link " href="#">
+    <header id ='header' class='header'>
+    <div class='container'>
+        <div class='header-body'>
+            <div id='#toggle' class='header-burger'  :class="{activeBur: isActive}" @click="show">
+                <span></span>
+            </div>
+            <div class='header-logo'>
+                <a><img src="../assets/images/Equiteez.svg" alt="Equiteez" width="179px" height="51px"></a>
+            </div>
+      <nav class='header-menu' id='bar' :class="{activeBur: isActive}">
+          <ul class='header-list'>
+              <li><a class="header-link" href="#securities">What Are Digital Securities?</a></li>
+                <li><a class="header-link" href="#products">Products</a></li>
+                <li><a class="header-link" href="#">Digitize Your Business</a></li>
+                <li><a class="header-link" href="#">Blog</a></li>
+                <li><a class="header-link" href="#">Contact Us</a></li>
+            </ul>
+          <ul class="header-list social">
+                  <li>
+                    <a href="#">
                       <img src="../assets/images/Twitter (Traced).svg"  width="30px" height="30px">
                     </a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">
+                  <li>
+                      <a href="#">
                           <img src="../assets/images/Facebook (Traced).svg"  width="30px" height="30px">
                       </a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">
+                    <li>
+                      <a href="#">
                           <img src="../assets/images/Linkedin (Traced).svg" alt="Equiteez" width="30px" height="30px">
                       </a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">
+                    <li>
+                      <a href="#">
                           <img src="../assets/images/Medium.svg" width="30px" height="30px">
                       </a>
                     </li>
                 </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-
+      </nav>
+    </div>
+  </div>
+</header>
 </template>
 
-<script>
-export default {
-  name: 'Header'
-}
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  header nav {
+
+.container{
+    padding: 0 20px;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 105px;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
-  }
-  .navbar{
+    z-index: 6;
+}
+.header-body{
     position: relative;
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-  .navbar > .container{
+    text-align: center;
+    align-items: center;
+    height: 105px;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+};
+
+.header-logo{
+    position: relative;
+    z-index: 7;
+}
+.header-burger{
+    display: none;
+}
+.header-menu {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
-  }
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
+}
+.header-list {
+    display: inherit;
+    position: relative;
+    z-index: 6;
     list-style: none;
-  }
-  @media (min-width: 992px){
-    .navbar{
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-    }
-    .navbar-nav {
-      flex-direction: row;
-    }
-  }
-  .navbar-brand {
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    text-decoration: none;
-    white-space: nowrap;
-  }
-  .navbar-collapse {
-    display: flex;
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center;
-  }
-  .nav-link{
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
-  header a.nav-link{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    color:#000000;
-    text-decoration: none;
-  }
-  header a:hover{
-    text-decoration: underline;
-  }
-  .social{
+}
+.list_item{
+    float: left;
+    overflow: hidden;
+}
+.social{
     margin-top: 0;
     margin-left: auto ;
-  }
-  @media screen and (max-width: 375px){
-    .navbar-brand{
-      margin: 0 auto;
+
+    & a{
+        padding: 0 0.5rem;
     }
   }
+
+.header-link{
+    color: #000000;
+    text-decoration: none;
+    padding: 0 0.5rem;
+    position: relative;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+@media(max-width: 992px){
+    .header-logo{
+        margin: 0 auto;
+        & img{
+            width: 146px;
+            height: 39px;
+        }
+    }
+    .header-burger{
+        position: relative;
+        display: block;
+        width: 23px;
+        height: 15px;
+        z-index: 7;
+    }
+    .header-burger::before,
+    .header-burger::after{
+        content: '';
+        position: absolute;
+        background-color: #2ECC71;
+        width: 100%;
+        height: 3px;
+        left:0;
+        transition: all 0.3s ease 0s;
+    }
+    .header-burger::before{
+        top: 0;
+    }
+    .header-burger::after{
+        bottom:0;
+    }
+    .header-burger.activeBur::before{
+        transform: rotate(45deg);
+        top: 6px;
+    }
+    .header-burger.activeBur::after{
+        transform: rotate(-45deg);
+        bottom: 6px;
+    }
+    .header-burger span{
+        position: absolute;
+        background-color: #2ECC71;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        top: 6px;
+        transition: all 0.3s ease 0s;
+    }
+    .header-burger.activeBur span{
+        transform: scale(0);
+    }
+    .header-menu{
+        position: fixed;
+        z-index: 5;
+        top:-150%;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(165, 207, 247);
+        padding: 105px 0 0 0;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+    }
+    .header-menu.activeBur{
+        display:initial;
+        top:0;
+    }
+    .activeBur .header-list li{
+        margin: 30px;
+    }
+
+}
 </style>
+<script>
+// import Vue from 'vue'
+export default {
+
+  el: 'header',
+  data: function () {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    show: function () {
+      this.isActive = !this.isActive
+    }
+  }
+
+}
+</script>

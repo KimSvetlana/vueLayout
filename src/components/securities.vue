@@ -49,7 +49,7 @@ export default {
 
 <style scoped lang="scss">
   section.securities{
-        padding-top: 35px;
+        padding-top: 33px;
     }
     .securities .wrapper{
         text-align: center;
@@ -61,11 +61,14 @@ export default {
         text-align: center;
     }
     .securities p{
-        margin-top: 15px;
+        margin-top: 30px;
     }
     .securities .items{
-        margin-top: 40px;
+        margin-top: 45px;
         align-items: center;
+        & p{
+            margin-top: 15px;
+        }
     }
     .securities h3{
         margin-top: 35px;
@@ -76,8 +79,8 @@ export default {
     }
     .securities form{
         margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 33px;
+        margin-top: 25px;
+        margin-bottom: 30px;
     }
     input.email{
         display: inline-block;
@@ -98,7 +101,7 @@ export default {
     }
     button.email {
         display: inline-block;
-        margin-left: 20px;
+        margin-left: 30px;
         padding: 10px 46px;
         color: #fff;
         font-size:20px;
@@ -121,6 +124,9 @@ export default {
         .item1, .item2, .item3{
             width: 100%;
         }
+        .securities p{
+            margin-top: 18px;
+        }
         .securities .items {
             margin-top: 25px;
         }
@@ -132,21 +138,21 @@ export default {
             width: 55%;
         }
         .item1 img ~ h3{
-            margin-top: 20px;
+            margin-top: 30px;
         }
         .item2 img{
             width: 67%;
             margin-top: 28px;
         }
         .item2 img ~ h3 {
-            margin-top: 33px;
+            margin-top: 40px;
         }
         .item3 img{
             width: 62%;
             margin-top: 17px;
         }
         .item3 img ~ h3 {
-            margin-top: 29px;
+            margin-top: 38px;
         }
         .securities form {
             margin-top: 27px;
