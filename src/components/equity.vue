@@ -113,16 +113,30 @@ export default {
             margin-bottom: 37px;
         }
     }
-    @media screen and (min-width: 376px) and (max-width: 991px){
-        section.equity{
-            height: auto;
+    @media screen and (min-width: 376px) and (max-width: 660px){
+        .equity .phone{
+            position: relative;
+            top: 0px;
+            left: -160px;
+
         }
+        .equity .phone-shadow {
+            top: 400px;
+            left: 0px
+        }
+    }
+    @media screen and (min-width: 661px) and (max-width: 991px){
         .equity .phone{
             position:static;
         }
         .equity .phone-shadow {
             top: 380px;
             left: 140px;
+        }
+    }
+    @media screen and (min-width: 376px) and (max-width: 991px){
+        section.equity{
+            height: auto;
         }
         .equity .content {
             width: 100%;
